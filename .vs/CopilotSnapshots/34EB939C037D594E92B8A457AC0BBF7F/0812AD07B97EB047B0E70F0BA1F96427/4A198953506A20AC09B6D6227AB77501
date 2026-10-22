@@ -1,0 +1,195 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Threading;
+
+namespace mip_exam
+{
+    // Owns the required background Thread and the scheduling algorithm.
+    public class DeliveryProcessor
+    {
+        private readonly DeliveryService deliveryService;
+
+        private readonly Action refreshRequested;
+        private readonly Action processingFinished;
+
+        private Thread workerThread;
+
+        private volatile bool stopRequested;
+
+        public DeliveryProcessor(
+            DeliveryService deliveryService,
+            Action refreshRequested,
+            Action processingFinished)
+        {
+            this.deliveryService =
+                deliveryService;
+
+            this.refreshRequested =
+                refreshRequested;
+
+            this.processingFinished =
+                processingFinished;
+        }
+
+        public bool IsRunning
+        {
+            get
+            {
+                return workerThread != null &&
+                       workerThread.IsAlive;
+            }
+        }
+
+        public void Start()
+        {
+            if (IsRunning)
+            {
+                return;
+            }
+
+            stopRequested = false;
+
+            workerThread =
+                new Thread(ProcessDeliveries);
+
+            workerThread.IsBackground = true;
+            workerThread.Start();
+        }
+
+        public void Stop()
+        {
+            // The active delivery is allowed to finish.
+            // The worker stops before selecting another delivery.
+            stopRequested = true;
+        }
+
+        public void WaitForCompletion()
+        {
+            if (workerThread != null &&
+                workerThread.IsAlive)
+            {
+                workerThread.Join();
+            }
+        }
+
+        private void ProcessDeliveries()
+        {
+            int consecutivePriority3Count = 0;
+
+            while (!stopRequested)
+            {
+                List<Delivery> deliveries =
+                    deliveryService.LoadDeliveries();
+
+                List<Delivery> pendingDeliveries =
+                    deliveries
+                        .Where(delivery =>
+                            delivery.Status == "Pending")
+                        .ToList();
+
+                if (pendingDeliveries.Count == 0)
+                {
+                    break;
+                }
+
+                Delivery nextDelivery =
+                    ChooseNextDelivery(
+                        pendingDeliveries,
+                        ref consecutivePriority3Count);
+
+                if (nextDelivery == null)
+                {
+                    break;
+                }
+
+                deliveryService.UpdateStatus(
+                    nextDelivery.Id,
+                    "Processing");
+
+                nextDelivery.SetStatus(
+                    "Processing");
+
+                refreshRequested();
+
+                // This calls the overridden delay method of either
+                // RegularDelivery or ExpressDelivery.
+                Thread.Sleep(
+                    nextDelivery.GetProcessingDelayMs());
+
+                deliveryService.UpdateStatus(
+                    nextDelivery.Id,
+                    "Completed");
+
+                nextDelivery.SetStatus(
+                    "Completed");
+
+                Trace.WriteLine(
+                    DateTime.Now.ToString(
+                        "yyyy-MM-dd HH:mm:ss") +
+                    " Delivery completed. Id=" +
+                    nextDelivery.Id);
+
+                Trace.Flush();
+
+                refreshRequested();
+            }
+
+            processingFinished();
+        }
+
+        private Delivery ChooseNextDelivery(
+            List<Delivery> pendingDeliveries,
+            ref int consecutivePriority3Count)
+        {
+            // LINQ filters and orders the lower-priority candidates.
+            List<Delivery> lowerPriorityDeliveries =
+                pendingDeliveries
+                    .Where(delivery =>
+                        delivery.Priority == 1 ||
+                        delivery.Priority == 2)
+                    .OrderBy(delivery => delivery.Id)
+                    .ToList();
+
+            // After two express deliveries, process the oldest
+            // waiting lower-priority delivery.
+            if (consecutivePriority3Count >= 2 &&
+                lowerPriorityDeliveries.Count > 0)
+            {
+                consecutivePriority3Count = 0;
+
+                return lowerPriorityDeliveries
+                    .FirstOrDefault();
+            }
+
+            // Priority 3 is normally selected first.
+            // The smallest Id wins when priorities are equal.
+            Delivery expressDelivery =
+                pendingDeliveries
+                    .Where(delivery =>
+                        delivery.Priority == 3)
+                    .OrderBy(delivery => delivery.Id)
+                    .FirstOrDefault();
+
+            if (expressDelivery != null)
+            {
+                consecutivePriority3Count++;
+
+                return expressDelivery;
+            }
+
+            // If no express delivery exists, process the oldest
+            // remaining lower-priority delivery.
+            if (lowerPriorityDeliveries.Count > 0)
+            {
+                consecutivePriority3Count = 0;
+
+                return lowerPriorityDeliveries
+                    .FirstOrDefault();
+            }
+
+            return null;
+        }
+    }
+}

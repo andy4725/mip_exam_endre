@@ -1,0 +1,172 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\C#\\mip_exam\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{94EFECAD-9F29-4965-8012-FC4228F6A15E}|mip_exam\\mip_exam.csproj|c:\\c#\\mip_exam\\mip_exam\\sqlitedeliveryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94EFECAD-9F29-4965-8012-FC4228F6A15E}|mip_exam\\mip_exam.csproj|solutionrelative:mip_exam\\sqlitedeliveryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94EFECAD-9F29-4965-8012-FC4228F6A15E}|mip_exam\\mip_exam.csproj|c:\\c#\\mip_exam\\mip_exam\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94EFECAD-9F29-4965-8012-FC4228F6A15E}|mip_exam\\mip_exam.csproj|solutionrelative:mip_exam\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94EFECAD-9F29-4965-8012-FC4228F6A15E}|mip_exam\\mip_exam.csproj|c:\\c#\\mip_exam\\mip_exam\\deliveryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94EFECAD-9F29-4965-8012-FC4228F6A15E}|mip_exam\\mip_exam.csproj|solutionrelative:mip_exam\\deliveryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94EFECAD-9F29-4965-8012-FC4228F6A15E}|mip_exam\\mip_exam.csproj|c:\\c#\\mip_exam\\mip_exam\\ideliveryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94EFECAD-9F29-4965-8012-FC4228F6A15E}|mip_exam\\mip_exam.csproj|solutionrelative:mip_exam\\ideliveryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94EFECAD-9F29-4965-8012-FC4228F6A15E}|mip_exam\\mip_exam.csproj|c:\\c#\\mip_exam\\mip_exam\\expressdelivery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94EFECAD-9F29-4965-8012-FC4228F6A15E}|mip_exam\\mip_exam.csproj|solutionrelative:mip_exam\\expressdelivery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94EFECAD-9F29-4965-8012-FC4228F6A15E}|mip_exam\\mip_exam.csproj|c:\\c#\\mip_exam\\mip_exam\\regulardelivery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94EFECAD-9F29-4965-8012-FC4228F6A15E}|mip_exam\\mip_exam.csproj|solutionrelative:mip_exam\\regulardelivery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94EFECAD-9F29-4965-8012-FC4228F6A15E}|mip_exam\\mip_exam.csproj|c:\\c#\\mip_exam\\mip_exam\\deliveryprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94EFECAD-9F29-4965-8012-FC4228F6A15E}|mip_exam\\mip_exam.csproj|solutionrelative:mip_exam\\deliveryprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94EFECAD-9F29-4965-8012-FC4228F6A15E}|mip_exam\\mip_exam.csproj|c:\\c#\\mip_exam\\mip_exam\\delivery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94EFECAD-9F29-4965-8012-FC4228F6A15E}|mip_exam\\mip_exam.csproj|solutionrelative:mip_exam\\delivery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94EFECAD-9F29-4965-8012-FC4228F6A15E}|mip_exam\\mip_exam.csproj|c:\\c#\\mip_exam\\mip_exam\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{94EFECAD-9F29-4965-8012-FC4228F6A15E}|mip_exam\\mip_exam.csproj|solutionrelative:mip_exam\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SqliteDeliveryRepository.cs",
+              "DocumentMoniker": "C:\\C#\\mip_exam\\mip_exam\\SqliteDeliveryRepository.cs",
+              "RelativeDocumentMoniker": "mip_exam\\SqliteDeliveryRepository.cs",
+              "ToolTip": "C:\\C#\\mip_exam\\mip_exam\\SqliteDeliveryRepository.cs",
+              "RelativeToolTip": "mip_exam\\SqliteDeliveryRepository.cs",
+              "ViewState": "AgIAABwAAACAZmZmZuYawAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T11:02:57.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IDeliveryRepository.cs",
+              "DocumentMoniker": "C:\\C#\\mip_exam\\mip_exam\\IDeliveryRepository.cs",
+              "RelativeDocumentMoniker": "mip_exam\\IDeliveryRepository.cs",
+              "ToolTip": "C:\\C#\\mip_exam\\mip_exam\\IDeliveryRepository.cs",
+              "RelativeToolTip": "mip_exam\\IDeliveryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T11:02:57.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ExpressDelivery.cs",
+              "DocumentMoniker": "C:\\C#\\mip_exam\\mip_exam\\ExpressDelivery.cs",
+              "RelativeDocumentMoniker": "mip_exam\\ExpressDelivery.cs",
+              "ToolTip": "C:\\C#\\mip_exam\\mip_exam\\ExpressDelivery.cs",
+              "RelativeToolTip": "mip_exam\\ExpressDelivery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T11:02:57.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RegularDelivery.cs",
+              "DocumentMoniker": "C:\\C#\\mip_exam\\mip_exam\\RegularDelivery.cs",
+              "RelativeDocumentMoniker": "mip_exam\\RegularDelivery.cs",
+              "ToolTip": "C:\\C#\\mip_exam\\mip_exam\\RegularDelivery.cs",
+              "RelativeToolTip": "mip_exam\\RegularDelivery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T11:02:57.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DeliveryService.cs",
+              "DocumentMoniker": "C:\\C#\\mip_exam\\mip_exam\\DeliveryService.cs",
+              "RelativeDocumentMoniker": "mip_exam\\DeliveryService.cs",
+              "ToolTip": "C:\\C#\\mip_exam\\mip_exam\\DeliveryService.cs",
+              "RelativeToolTip": "mip_exam\\DeliveryService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAawD0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T10:53:11.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\C#\\mip_exam\\mip_exam\\Form1.cs",
+              "RelativeDocumentMoniker": "mip_exam\\Form1.cs",
+              "ToolTip": "C:\\C#\\mip_exam\\mip_exam\\Form1.cs",
+              "RelativeToolTip": "mip_exam\\Form1.cs",
+              "ViewState": "AgIAAHoAAAAA5P///38dwDQBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T10:21:19.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DeliveryProcessor.cs",
+              "DocumentMoniker": "C:\\C#\\mip_exam\\mip_exam\\DeliveryProcessor.cs",
+              "RelativeDocumentMoniker": "mip_exam\\DeliveryProcessor.cs",
+              "ToolTip": "C:\\C#\\mip_exam\\mip_exam\\DeliveryProcessor.cs",
+              "RelativeToolTip": "mip_exam\\DeliveryProcessor.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAApwCQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T11:02:57.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Delivery.cs",
+              "DocumentMoniker": "C:\\C#\\mip_exam\\mip_exam\\Delivery.cs",
+              "RelativeDocumentMoniker": "mip_exam\\Delivery.cs",
+              "ToolTip": "C:\\C#\\mip_exam\\mip_exam\\Delivery.cs",
+              "RelativeToolTip": "mip_exam\\Delivery.cs",
+              "ViewState": "AgIAAEAAAABIaWZmZmYZwD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T10:58:32.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\C#\\mip_exam\\mip_exam\\Form1.cs",
+              "RelativeDocumentMoniker": "mip_exam\\Form1.cs",
+              "ToolTip": "C:\\C#\\mip_exam\\mip_exam\\Form1.cs [Design]",
+              "RelativeToolTip": "mip_exam\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T10:16:44.723Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

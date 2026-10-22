@@ -1,0 +1,13 @@
+﻿using System.Collections.Generic;
+
+namespace mip_exam
+{
+    public interface IDeliveryRepository
+    {
+        int Insert(Delivery delivery);
+
+        List<Delivery> LoadAll();
+
+        void UpdateStatus(int id, string status);
+    }
+}

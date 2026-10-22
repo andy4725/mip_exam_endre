@@ -1,0 +1,14 @@
+C:\C#\mip_exam\mip_exam\bin\x64\Debug\e_sqlite3.dll
+C:\C#\mip_exam\mip_exam\bin\x64\Debug\mip_exam.exe.config
+C:\C#\mip_exam\mip_exam\bin\x64\Debug\mip_exam.exe
+C:\C#\mip_exam\mip_exam\bin\x64\Debug\mip_exam.pdb
+C:\C#\mip_exam\mip_exam\bin\x64\Debug\System.Data.SQLite.dll
+C:\C#\mip_exam\mip_exam\bin\x64\Debug\System.Data.SQLite.xml
+C:\C#\mip_exam\mip_exam\obj\x64\Debug\mip_exam.csproj.AssemblyReference.cache
+C:\C#\mip_exam\mip_exam\obj\x64\Debug\mip_exam.Form1.resources
+C:\C#\mip_exam\mip_exam\obj\x64\Debug\mip_exam.Properties.Resources.resources
+C:\C#\mip_exam\mip_exam\obj\x64\Debug\mip_exam.csproj.GenerateResource.cache
+C:\C#\mip_exam\mip_exam\obj\x64\Debug\mip_exam.csproj.CoreCompileInputs.cache
+C:\C#\mip_exam\mip_exam\obj\x64\Debug\mip_exam.csproj.Up2Date
+C:\C#\mip_exam\mip_exam\obj\x64\Debug\mip_exam.exe
+C:\C#\mip_exam\mip_exam\obj\x64\Debug\mip_exam.pdb
